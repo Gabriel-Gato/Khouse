@@ -17,7 +17,7 @@ public class Gato {
     private String Nome;
 
     @Column(nullable = false)
-    private int idade;
+    private Integer idade;
 
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
@@ -30,27 +30,32 @@ public class Gato {
     @Column(nullable = false)
     private String descricao;
 
+    @Column(nullable = false)
+    private String imagem;
+
     public Gato() {
     }
 
-    public Gato(long id, String nome, int idade, EscolhaTempo tempo, GatoGenero genero, String descricao) {
+    public Gato(long id, String nome, Integer idade, EscolhaTempo tempo, GatoGenero genero, String descricao, String imagem) {
         this.id = id;
         Nome = nome;
         this.idade = idade;
         this.tempo = tempo;
         this.genero = genero;
         this.descricao = descricao;
+        this.imagem = imagem;
     }
 
     @Override
     public String toString() {
-        return "Gatos{" +
+        return "Gato{" +
                 "id=" + id +
                 ", Nome='" + Nome + '\'' +
                 ", idade=" + idade +
                 ", tempo=" + tempo +
                 ", genero=" + genero +
                 ", descricao='" + descricao + '\'' +
+                ", imagem='" + imagem + '\'' +
                 '}';
     }
 
@@ -70,11 +75,11 @@ public class Gato {
         Nome = nome;
     }
 
-    public int getIdade() {
+    public Integer getIdade() {
         return idade;
     }
 
-    public void setIdade(int idade) {
+    public void setIdade(Integer idade) {
         this.idade = idade;
     }
 
@@ -101,5 +106,15 @@ public class Gato {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    public String getImagem() {
+        return imagem;
+    }
+
+    public void setImagem(String imagem) {
+        this.imagem = imagem;
+    }
 }
+
+
 

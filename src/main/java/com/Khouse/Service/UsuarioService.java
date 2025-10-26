@@ -88,18 +88,15 @@ public class UsuarioService {
 
     }
 
-    //Service da maioria feito, estou com muito sono e vou continuar amanha para não afetar meu desempenho
-    //Meta par amanha: Service dos gatos e Controller das duas classes
+    public boolean verificarSenha(String email, String senha){
+        Usuario usuario = usuarioRepository.findByEmail(email)
+                .orElseThrow(() -> new IllegalArgumentException("Usuario não encontrado"));
+        if (usuario == null){
+            return false;
+        }
 
-
-
-
-
-
-
-
-
-
+        return passwordEncoder.matches(senha, usuario.getSenha());
+    }
 
 }
 
