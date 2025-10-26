@@ -1,0 +1,79 @@
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  width: 100%;
+  max-width: 1057px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-k {
+  color: #E9A49D;
+  font-size: 64px;
+  font-family: 'Kalnia', serif;
+  font-weight: 500;
+}
+
+.logo-house {
+  color: #615F5F;
+  font-size: 36px;
+  font-family: 'Kalnia', serif;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+.navegacao {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.link-navegacao {
+  color: #676262;
+  font-size: 16px;
+  font-family: 'Kaisei Opti', serif;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+  padding: 5px 0;
+}
+
+.link-navegacao:hover {
+  color: #E9A49D;
+}
+
+
+.link-navegacao::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #E9A49D;
+  transition: width 0.3s ease;
+}
+
+.link-navegacao:hover::after {
+  width: 100%;
+}
+
+.icone-gato-cabecalho {
+  position: absolute;
+  right: 50px;
+  top: 11px;
+  opacity: 0.36;
+  width: 67px;
+  height: 67px;
+}
