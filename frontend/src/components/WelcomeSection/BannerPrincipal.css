@@ -43,20 +43,27 @@
 .botao-cta {
   width: 290px;
   height: 82px;
-  background: #AA8EA4;
-  opacity: 0.54;
-  border: none;
+  background: rgba(233, 164, 157, 0.95);
+  border: 3px solid white;
   border-radius: 75px;
-  color: #F9EFF9;
+  color: white;
   font-size: 32px;
   font-family: 'Kanit', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-left: 0;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  backdrop-filter: blur(10px);
 }
 
 .botao-cta:hover {
-  opacity: 0.8;
-  transform: translateY(-2px);
+  background: white;
+  color: #E9A49D;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  border-color: #E9A49D;
 }
