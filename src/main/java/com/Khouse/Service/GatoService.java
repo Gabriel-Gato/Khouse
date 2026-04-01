@@ -64,8 +64,14 @@ public class GatoService {
         if(gatoAtualizado.getIdade() != null)
             gato.setIdade(gatoAtualizado.getIdade());
 
-        if(gatoAtualizado.getTempo() != null)
-            gato.setTempo(gatoAtualizado.getTempo());
+        if(gatoAtualizado.getVacinado() != null)
+            gato.setVacinado(gatoAtualizado.getVacinado());
+
+        if(gatoAtualizado.getCastrado() != null)
+            gato.setCastrado(gatoAtualizado.getCastrado());
+
+        if(gatoAtualizado.getPersonalidade() != null)
+            gato.setPersonalidade(gatoAtualizado.getPersonalidade());
 
         if(gatoAtualizado.getGenero() != null)
             gato.setGenero(gatoAtualizado.getGenero());

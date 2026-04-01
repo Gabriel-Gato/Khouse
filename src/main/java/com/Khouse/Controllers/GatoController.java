@@ -100,9 +100,17 @@ public class GatoController {
                 gatoexistente.setIdade(atualizacao.getIdade());
             }
 
-            if (atualizacao.getTempo() != null){
-                gatoexistente.setTempo(atualizacao.getTempo());
-            }
+           if (atualizacao.getVacinado() != null){
+               gatoexistente.setVacinado(atualizacao.getVacinado());
+           }
+
+           if (atualizacao.getCastrado() != null){
+               gatoexistente.setCastrado(atualizacao.getCastrado());
+           }
+
+           if (atualizacao.getPersonalidade() != null){
+               gatoexistente.setPersonalidade(atualizacao.getPersonalidade());
+           }
 
             if (atualizacao.getGenero() != null){
                 gatoexistente.setGenero(atualizacao.getGenero());

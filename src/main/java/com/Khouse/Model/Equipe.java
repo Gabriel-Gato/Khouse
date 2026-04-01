@@ -1,50 +1,31 @@
 package com.Khouse.Model;
 
-
 import com.Khouse.Model.Enum.GatoGenero;
 import jakarta.persistence.*;
 import lombok.*;
-
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="gatos")
-public class Gato {
+@Table(name = "equipe")
+public class Equipe {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(nullable = false)
-    private String Nome;
+    private String nome;
 
     @Column(nullable = false)
-    private Integer idade;
+    private String email;
 
     @Column(nullable = false)
-   private String personalidade;
-
-    @Column
-    private String vacinado;
-
-    @Column
-    private String Castrado;
-
-    @Column(nullable = false)
-    @Enumerated(EnumType.STRING)
-    private GatoGenero genero;
-
-    @Column(nullable = false)
-    private Long descricao;
+    private String cargo;
 
     @Column(nullable = false)
     private String imagem;
 
-
 }
-
-
-
